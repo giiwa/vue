@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module version="1.0">
+  <id>141</id>
+  <name>vue</name>
+  <package>org.giiwa.vue.web</package>
+  <version>1.0</version>
+  <build>0</build>
+  <enabled>true</enabled>
+  <readme>可视化组件</readme>
+  <listener>
+    <!--add module listener here, please refer IListener interface-->
+    <class>org.giiwa.vue.web.VueListener</class>
+  </listener>
+  <required>
+    <!--add all required modules here-->
+    <module name="default" minversion="2.0.1908281445" maxversion="2.0.*"/>
+  </required>
+  <key>MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMJMvzQjgWnDPKQFRiKG4EGRcRx4fyhTX+gczJGU9P4AhdDXpbv+DLMr2AOIRvaRR+SHTPTDlA9Z+On3wsgyQV8zi9yVTGlo4xgveSVFNuh64p3CW90mIjCZpzzFVjahrpQcOEH3K+bpX6GPeVprKIS7jGJ2ATMirJTR1hwbJvlZAgMBAAECgYAXkdPH8V6rg8GBbBpb6dyeV5RPDdbu/14s/AFcz6MAhPO2p9I1AdZsja8AjrF9C5abBEazkl4Nlq55Q1LfkikXuz7fZRp0IU+ybd1ZUg7/ZCvHbXc3bTYqDD//4kOaZHveH39qQN4Ov1KUdUzLqkwTpA78WoSz6bRLvmBZ5vuqAQJBAN/5rcslhOItk/wFGB6Jyx9Cv0itU456E+t7r7lC2v74ciYeiUpVxh7eR7hqIec0bh+hyBl4RAT/gcPCNB9ecqECQQDeFNW4xKOdtND7n50cGp3eIXW3fMo9HrNu7OIMzPHiRLNGGnAVm/wqfJebH+8wsHe5Q4eSZ+G1A+gkKi40JkO5AkEAyi9hBOasq2SLl1Cd8ktfcqvVc20L5a0sOEJiYfIJMWvj16dvNgxyGcF8quwcCNPaqXFo6h0YAg8I/EdeuAaRoQJBAK8QYYGrkQbq2KriIelbmgLXAYLJHmub3fqdRXytuieR3HhwstZ2Bgw/9wrT26vYECi88QwaU7RsBf0sOwvk9hECQBZ7JSOPckENOukpz5Oh6GdQ6lMrmf3ia/QjG4UfHMP2hBm3GLWV4Jupc5NlbcXLhcvvfLF81F80+WDVyFUXlAY=</key>
+</module>

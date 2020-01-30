@@ -1,0 +1,30 @@
+package org.giiwa.vue.web;
+
+import org.apache.commons.fileupload.FileItem;
+import org.giiwa.core.base.IOUtil;
+import org.giiwa.core.bean.X;
+import org.giiwa.core.dfile.DFile;
+import org.giiwa.core.json.JSON;
+import org.giiwa.framework.bean.Disk;
+import org.giiwa.framework.web.Controller;
+import org.giiwa.framework.web.Path;
+
+public class ueditor extends Controller {
+
+	@Path(path = "upload/(.*)", login = true)
+	public void upload(String filename) {
+		// save the data
+		FileItem f = this.getFile("file");
+		DFile f1 = Disk.seek("/upload/" + lang.format(System.currentTimeMillis(), "yyyy/MM/dd") + "/" + filename);
+
+		try {
+			IOUtil.copy(f.getInputStream(), f1.getOutputStream());
+		} catch (Exception e) {
+			log.error(e.getMessage(), e);
+		}
+
+		this.response(JSON.create().append(X.STATE, 200).append("url", f1.getFilename()));
+
+	}
+
+}
